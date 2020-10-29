@@ -63,7 +63,7 @@ $(function () {
             success: function (res) {
                 if(res.status !== 0) return layer.msg(res.message)
                 layer.msg('登录成功啦！')
-                // 保存token
+                // 保存token  localStorage.setItem(“key”,“value”)：存储名字为key的一个值value
                 localStorage.setItem('token', res.token)
                 // 页面跳转
                 location.href = '/index.html'
