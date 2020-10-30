@@ -24,20 +24,19 @@
                 <li class="layui-nav-item">
                     <!-- 顶部头像区 -->
                     <a href="javascript:;" class="userinfo">
-                        <!-- <img src="http://t.cn/RCzsdCq" class="layui-nav-img"> -->
-                        <img src="" class="layui-nav-img">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
                         <span class="text-avater">A</span>
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
                         <dd>
-                            <a href="">基本资料</a>
+                            <a href="/user/user_info.html" target="fm">基本资料</a>
                         </dd>
                         <dd>
-                            <a href="">更换头像</a>
+                            <a href="/user/user_avatar.html" target="fm">更换头像</a>
                         </dd>
                         <dd>
-                            <a href="">重置密码</a>
+                            <a href="/user/user_pwd.html" target="fm">重置密码</a>
                         </dd>
                     </dl>
                 </li>
@@ -86,13 +85,13 @@
                         </a>
                         <dl class="layui-nav-child">
                             <dd>
-                                <a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a>
+                                <a href="/user/user_info.html" target="fm"><i class="layui-icon layui-icon-app"></i>基本资料</a>
                             </dd>
                             <dd>
-                                <a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a>
+                                <a href="/user/user_avatar.html" target="fm"><i class="layui-icon layui-icon-app"></i>更换头像</a>
                             </dd>
                             <dd>
-                                <a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a>
+                                <a href="/user/user_pwd.html" target="fm"><i class="layui-icon layui-icon-app"></i>重置密码</a>
                             </dd>
                         </dl>
                     </li>
@@ -101,7 +100,7 @@
         </div>
 
          <!-- 内容主体区域 -->
-        <div class="layui-body">           
+        <div class="layui-body"> 
             <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
         </div>
 
@@ -122,3 +121,13 @@
 </body>
 
 </html>
+<!-- 
+    iframe 用于在网页内显示网页
+    URL 指向隔离页面的位置。
+    frameborder 属性规定是否显示 iframe 周围的边框。设置属性值为 "0" 就可以删除边框
+    使用 iframe 作为链接的目标， 链接的 target 属性必须引用 iframe 的 name 属性
+<iframe src="URL" name="fm" frameborder="0"></iframe>  
+<a href="..." target="fm"></a>
+
+
+ -->
